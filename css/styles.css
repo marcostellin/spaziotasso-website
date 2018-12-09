@@ -3,6 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 18px;
 }
 
 header {
@@ -14,6 +19,7 @@ header {
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,19 +34,36 @@ header .cover {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   z-index: 2;
-  opacity: 0;
-  animation: fadeout 20s cubic-bezier(0.95, 0.05, 0.8, 0.04) 1s infinite;
+  /*opacity: 0; */
+  /*animation: fadeout 20s 1s infinite; */
 }
 
 @keyframes fadeout {
-  50% {
+  20% {
     opacity: 1;
   }
 
-  100% {
+  40% {
     opacity: 0;
   }
+}
+
+section h3 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  border: 2px solid black;
+  width: 600px;
 }
 
 /* Navbar Styles */
@@ -86,6 +109,23 @@ header .logo {
 }
 
 /* About SpazioTasso section */
+.spaziotasso p {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 40px;
+}
+
+/* Prodotti Section */
+
+.prodotti p {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 40px;
+}
+
+
+
+/* Contacts section */
 
 .contacts {
   height: 150px;
@@ -95,6 +135,10 @@ header .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contacts h3 {
+  font-size: 30px;
 }
 
 .contacts .social-list {
